@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+    height: 30vh;
+    background: linear-gradient(180deg, rgba(27,6,6,1) 0%, rgba(150,75,0,1) 35%, rgba(232,225,161,1) 100%); 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+}
+
+.itemContainer {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .itemContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+}

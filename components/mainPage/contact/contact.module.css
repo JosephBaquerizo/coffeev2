@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
+
+.contact {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("/contact1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.titleContainer {
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    outline: 0;
+    border-width: 0 0 2px;
+    outline: none;
+}
+
+.inputPairItem {
+    width: 280px;
+}
+
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(182, 182, 182);
+    opacity: 1; /* Firefox */
+}
+  
+.input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(182, 182, 182);
+}
+
+.input::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(182, 182, 182);
+}
+
+.inputPair {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.bottomItem {
+    width: 100%;
+}
+
+.inputEmail {
+    width: 100%;
+}
+
+.textarea {
+    padding: 5px;
+    margin-top: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    height: 100px;
+}
+
+.button {
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .textarea {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .inputPair {
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .inputs {
+        justify-content: center;
+    }
+
+    .inputEmail {
+        width: 275px;
+        padding-top: 25px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textarea {
+        width: 275px;
+    }
+
+    .button {
+        width: 275px;
+    }
+
+}
