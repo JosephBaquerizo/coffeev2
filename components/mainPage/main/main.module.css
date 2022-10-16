@@ -71,6 +71,7 @@
     line-height: 0;
     transform: rotate(180deg);
     z-index: 2;
+    display: block;
 }
 
 .shapeDivider svg {

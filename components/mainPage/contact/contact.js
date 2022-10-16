@@ -4,11 +4,11 @@ import cls from "classnames";
 export default function Contact() {
     return (
         <section id="contact" className={styles.contact}>
+            <div className={styles.titleContainer}>
+                <span className={styles.title}>CONTACT US</span>
+                <span className={styles.subtitle}>Get in touch with us by filling the following form</span>
+            </div>
             <div className={styles.form}>
-                <div className={styles.titleContainer}>
-                    <span className={styles.title}>CONTACT US</span>
-                    <span className={styles.subtitle}>Get in touch with us by filling the following form</span>
-                </div>
                 <div className={styles.inputs}>
                     <div className={styles.inputPair}>
                         <div className={styles.item}>
