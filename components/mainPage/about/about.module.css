@@ -4,9 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: fit-content;
-    height: 30vh;
-    background: linear-gradient(180deg, rgba(27,6,6,1) 0%, rgba(150,75,0,1) 35%, rgba(232,225,161,1) 100%); 
+    height: fit-content;
+    background: linear-gradient(180deg, rgba(27,6,6,1) 0%, rgba(150,75,0,1) 35%, rgba(232,225,161,1) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .content {
@@ -18,7 +19,7 @@
 }
 
 .title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 36px;
     font-weight: 600;
     font-family: 'Dosis', sans-serif;
@@ -76,6 +77,14 @@
 
     .item span {
         font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+
+    .itemContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }

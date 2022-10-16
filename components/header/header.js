@@ -6,7 +6,7 @@ import cls from "classnames";
 
 export default function Header() {
 
-    const [sidebar, setSidebar] = useState(true);
+    const [sidebar, setSidebar] = useState(false);
 
     const handleClick = () => {
         setSidebar(current => !current);
